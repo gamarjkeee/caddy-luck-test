@@ -1,45 +1,473 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script defer src="./js/script.js"></script>
-    <script defer src="./js/null.js"></script>
-    <title>CaddyLuck test</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">header</header>
-      <main class="page">
-        <section class="search-section">
-          <div class="search-section__container">
-            <div class="search-section__search search">
-              <div class="search__main">
-                main search
-                <div class="search__buttons">
-                  <button id="togrid" type="button">line</button>
-                  <button id="filter" type="button">fitlers</button>
-                </div>
-              </div>
-              <div class="search__filters">
-                <button
-                  id="filter-absolute"
-                  type="button"
-                  style="display: none">
-                  fitlers</button
-                >filters
-              </div>
-            </div>
-            <div class="search-section__items">
-              <div class="search-section__item">item</div>
-              <div class="search-section__item">item</div>
-              <div class="search-section__item">item</div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer class="footer">footer</footer>
-    </div>
-  </body>
+
+<head>
+	<title>CaddyLuck test</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231122151904">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<section class="products">
+				<div class="products__container">
+					<div class="products__navigation">
+						<button id="line" type="button" class="_icon-line active"></button>
+						<button id="grid" type="button" class="_icon-grid"></button>
+					</div>
+					<div class="products__items">
+						<div class="products__item item-product">
+							<div class="item-product__header header-item-product">
+								<h3 class="header-item-product__title">
+									Opel Insignia - 2.0 Diesel Aut. Business Innovation / 2017
+								</h3>
+								<div class="header-item-product__time">00:08:15</div>
+							</div>
+							<div class="item-product__info info-item-product">
+								<div class="info-item-product__column">
+									<div class="info-item-product__box info-item-product__box--number">
+										<a href="#" class="info-item-product__number">№ 2550</a>
+										<h4 class="info-item-product__title">
+											<a href="#">
+												<span>№ 2550</span> 15.05.2023 - PL - OPEN AUCTION
+												segment B&C+LCV</a>
+										</h4>
+									</div>
+								</div>
+								<div class="info-item-product__column">
+									<div class="info-item-product__box">
+										<div class="info-item-product__location">Київ</div>
+										<div class="info-item-product__date">31.07.2017</div>
+										<a href="#" class="info-item-product__link">Сайт донор</a>
+									</div>
+								</div>
+								<div class="info-item-product__column">
+									<div class="info-item-product__box info-item-product__box--user">
+										<div class="info-item-product__id">ID 544892</div>
+										<div class="info-item-product__user">User722</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-product__main main-item-product">
+								<div class="main-item-product__column">
+									<div class="main-item-product__slider swiper">
+										<div class="main-item-product__wrapper swiper-wrapper">
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.jpg" alt="Image" /></picture>
+											</div>
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/02.webp" type="image/webp"><img src="img/02.jpg" alt="Image" /></picture>
+											</div>
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/03.webp" type="image/webp"><img src="img/03.jpg" alt="Image" /></picture>
+											</div>
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.jpg" alt="Image" /></picture>
+											</div>
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.jpg" alt="Image" /></picture>
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+										<div class="main-item-product__actions">
+											<button class="main-item-product__action">
+												<img src="img/icons/download.svg" alt="Icon Download" />
+											</button>
+											<button class="main-item-product__action">
+												<img src="img/icons/share.svg" alt="Icon Share" />
+											</button>
+											<button class="main-item-product__action">
+												<img src="img/icons/favorite.svg" alt="Icon Favorite" />
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="main-item-product__column">
+									<div class="info-item-product__box info-item-product__box--grid">
+										<div class="info-item-product__id">ID 544892</div>
+										<div class="info-item-product__user">User722</div>
+									</div>
+									<div class="main-item-product__details details-main-item">
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Тип палива</div>
+											<div class="item-details__value">Diesel</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Рік випуску</div>
+											<div class="item-details__value">04.10.2018</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Об’єм двигуна</div>
+											<div class="item-details__value">1956 см3</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">КПП</div>
+											<div class="item-details__value">Mechanic</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Потужність</div>
+											<div class="item-details__value">75 kW</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Пробіг</div>
+											<div class="item-details__value">211886 km</div>
+										</div>
+									</div>
+									<form class="main-item-product__rate rate-main-item" action="#" method="post">
+										<div class="rate-main-item__box-input">
+											<input required placeholder="від 20300" class="rate-main-item__input" type="text" />
+										</div>
+										<button class="rate-main-item__button" type="submit">
+											Розмістити ставку
+										</button>
+									</form>
+								</div>
+								<div class="main-item-product__column">
+									<button class="main-item-product__show-calculations">
+										Показати розрахунки
+									</button>
+									<div class="main-item-product__prices prices-main-item">
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">
+												Розміщена ставка
+											</div>
+											<div class="prices-main-item__value">20,300€</div>
+										</div>
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">Сергій Петров</div>
+											<div class="prices-main-item__value">+380937887887</div>
+										</div>
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">Ваша ставка</div>
+											<div class="prices-main-item__value">20,300€</div>
+										</div>
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">
+												Вартість авто в Польщі
+											</div>
+											<div class="prices-main-item__value">21,360€</div>
+										</div>
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">
+												Орієнтовна ціна з розмитненням
+											</div>
+											<div class="prices-main-item__value">28,284€</div>
+										</div>
+									</div>
+									<button type="button" class="main-item-product__button">
+										Купити одразу за <span>20,500 €</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="products__item item-product">
+							<div class="item-product__header header-item-product">
+								<h3 class="header-item-product__title">
+									Opel Insignia - 2.0 Diesel Aut. Business Innovation / 2017
+								</h3>
+								<div class="header-item-product__time">00:08:15</div>
+							</div>
+							<div class="item-product__info info-item-product">
+								<div class="info-item-product__column">
+									<div class="info-item-product__box info-item-product__box--number">
+										<a href="#" class="info-item-product__number">№ 2550</a>
+										<h4 class="info-item-product__title">
+											<a href="#">
+												<span>№ 2550</span> 15.05.2023 - PL - OPEN AUCTION
+												segment B&C+LCV</a>
+										</h4>
+									</div>
+								</div>
+								<div class="info-item-product__column">
+									<div class="info-item-product__box">
+										<div class="info-item-product__location">Київ</div>
+										<div class="info-item-product__date">31.07.2017</div>
+										<a href="#" class="info-item-product__link">Сайт донор</a>
+									</div>
+								</div>
+								<div class="info-item-product__column">
+									<div class="info-item-product__box info-item-product__box--user">
+										<div class="info-item-product__id">ID 544892</div>
+										<div class="info-item-product__user">User722</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-product__main main-item-product">
+								<div class="main-item-product__column">
+									<div class="main-item-product__slider swiper">
+										<div class="main-item-product__wrapper swiper-wrapper">
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/02.webp" type="image/webp"><img src="img/02.jpg" alt="Image" /></picture>
+											</div>
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.jpg" alt="Image" /></picture>
+											</div>
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/03.webp" type="image/webp"><img src="img/03.jpg" alt="Image" /></picture>
+											</div>
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.jpg" alt="Image" /></picture>
+											</div>
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.jpg" alt="Image" /></picture>
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+										<div class="main-item-product__actions">
+											<button class="main-item-product__action">
+												<img src="img/icons/download.svg" alt="Icon Download" />
+											</button>
+											<button class="main-item-product__action">
+												<img src="img/icons/share.svg" alt="Icon Share" />
+											</button>
+											<button class="main-item-product__action">
+												<img src="img/icons/favorite.svg" alt="Icon Favorite" />
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="main-item-product__column">
+									<div class="info-item-product__box info-item-product__box--grid">
+										<div class="info-item-product__id">ID 544892</div>
+										<div class="info-item-product__user">User722</div>
+									</div>
+									<div class="main-item-product__details details-main-item">
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Тип палива</div>
+											<div class="item-details__value">Diesel</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Рік випуску</div>
+											<div class="item-details__value">04.10.2018</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Об’єм двигуна</div>
+											<div class="item-details__value">1956 см3</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">КПП</div>
+											<div class="item-details__value">Mechanic</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Потужність</div>
+											<div class="item-details__value">75 kW</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Пробіг</div>
+											<div class="item-details__value">211886 km</div>
+										</div>
+									</div>
+									<form class="main-item-product__rate rate-main-item" action="#" method="post">
+										<div class="rate-main-item__box-input">
+											<input required placeholder="від 20300" class="rate-main-item__input" type="text" />
+										</div>
+										<button class="rate-main-item__button" type="submit">
+											Розмістити ставку
+										</button>
+									</form>
+								</div>
+								<div class="main-item-product__column">
+									<button class="main-item-product__show-calculations">
+										Показати розрахунки
+									</button>
+									<div class="main-item-product__prices prices-main-item">
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">
+												Розміщена ставка
+											</div>
+											<div class="prices-main-item__value">20,300€</div>
+										</div>
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">Сергій Петров</div>
+											<div class="prices-main-item__value">+380937887887</div>
+										</div>
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">Ваша ставка</div>
+											<div class="prices-main-item__value">20,300€</div>
+										</div>
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">
+												Вартість авто в Польщі
+											</div>
+											<div class="prices-main-item__value">21,360€</div>
+										</div>
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">
+												Орієнтовна ціна з розмитненням
+											</div>
+											<div class="prices-main-item__value">28,284€</div>
+										</div>
+									</div>
+									<button type="button" class="main-item-product__button">
+										Купити одразу за <span>20,500 €</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="products__item item-product">
+							<div class="item-product__header header-item-product">
+								<h3 class="header-item-product__title">
+									Opel Insignia - 2.0 Diesel Aut. Business Innovation / 2017
+								</h3>
+								<div class="header-item-product__time">00:08:15</div>
+							</div>
+							<div class="item-product__info info-item-product">
+								<div class="info-item-product__column">
+									<div class="info-item-product__box info-item-product__box--number">
+										<a href="#" class="info-item-product__number">№ 2550</a>
+										<h4 class="info-item-product__title">
+											<a href="#">
+												<span>№ 2550</span> 15.05.2023 - PL - OPEN AUCTION
+												segment B&C+LCV</a>
+										</h4>
+									</div>
+								</div>
+								<div class="info-item-product__column">
+									<div class="info-item-product__box">
+										<div class="info-item-product__location">Київ</div>
+										<div class="info-item-product__date">31.07.2017</div>
+										<a href="#" class="info-item-product__link">Сайт донор</a>
+									</div>
+								</div>
+								<div class="info-item-product__column">
+									<div class="info-item-product__box info-item-product__box--user">
+										<div class="info-item-product__id">ID 544892</div>
+										<div class="info-item-product__user">User722</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-product__main main-item-product">
+								<div class="main-item-product__column">
+									<div class="main-item-product__slider swiper">
+										<div class="main-item-product__wrapper swiper-wrapper">
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/03.webp" type="image/webp"><img src="img/03.jpg" alt="Image" /></picture>
+											</div>
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.jpg" alt="Image" /></picture>
+											</div>
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/02.webp" type="image/webp"><img src="img/02.jpg" alt="Image" /></picture>
+											</div>
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.jpg" alt="Image" /></picture>
+											</div>
+											<div class="main-item-product__slide swiper-slide">
+												<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.jpg" alt="Image" /></picture>
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+										<div class="main-item-product__actions">
+											<button class="main-item-product__action">
+												<img src="img/icons/download.svg" alt="Icon Download" />
+											</button>
+											<button class="main-item-product__action">
+												<img src="img/icons/share.svg" alt="Icon Share" />
+											</button>
+											<button class="main-item-product__action">
+												<img src="img/icons/favorite.svg" alt="Icon Favorite" />
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="main-item-product__column">
+									<div class="info-item-product__box info-item-product__box--grid">
+										<div class="info-item-product__id">ID 544892</div>
+										<div class="info-item-product__user">User722</div>
+									</div>
+									<div class="main-item-product__details details-main-item">
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Тип палива</div>
+											<div class="item-details__value">Diesel</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Рік випуску</div>
+											<div class="item-details__value">04.10.2018</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Об’єм двигуна</div>
+											<div class="item-details__value">1956 см3</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">КПП</div>
+											<div class="item-details__value">Mechanic</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Потужність</div>
+											<div class="item-details__value">75 kW</div>
+										</div>
+										<div class="details-main-item__item item-details">
+											<div class="item-details__label">Пробіг</div>
+											<div class="item-details__value">211886 km</div>
+										</div>
+									</div>
+									<form class="main-item-product__rate rate-main-item" action="#" method="post">
+										<div class="rate-main-item__box-input">
+											<input required placeholder="від 20300" class="rate-main-item__input" type="text" />
+										</div>
+										<button class="rate-main-item__button" type="submit">
+											Розмістити ставку
+										</button>
+									</form>
+								</div>
+								<div class="main-item-product__column">
+									<button class="main-item-product__show-calculations">
+										Показати розрахунки
+									</button>
+									<div class="main-item-product__prices prices-main-item">
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">
+												Розміщена ставка
+											</div>
+											<div class="prices-main-item__value">20,300€</div>
+										</div>
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">Сергій Петров</div>
+											<div class="prices-main-item__value">+380937887887</div>
+										</div>
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">Ваша ставка</div>
+											<div class="prices-main-item__value">20,300€</div>
+										</div>
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">
+												Вартість авто в Польщі
+											</div>
+											<div class="prices-main-item__value">21,360€</div>
+										</div>
+										<div class="prices-main-item__item">
+											<div class="prices-main-item__label">
+												Орієнтовна ціна з розмитненням
+											</div>
+											<div class="prices-main-item__value">28,284€</div>
+										</div>
+									</div>
+									<button type="button" class="main-item-product__button">
+										Купити одразу за <span>20,500 €</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20231122151904"></script>
+</body>
+
 </html>
