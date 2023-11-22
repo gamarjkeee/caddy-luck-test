@@ -1,1 +1,1 @@
-# caddy-luck-test
+https://gamarjkeee.github.io/caddy-luck-test/
