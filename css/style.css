@@ -823,6 +823,7 @@ h6 {
   font-size: 1rem;
   font-weight: 500;
   letter-spacing: 0.02rem;
+  min-height: 3.25rem;
 }
 
 .grid .main-item-product__show-calculations {
@@ -854,6 +855,7 @@ h6 {
   font-weight: 500;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  min-height: 3.25rem;
 }
 
 .grid .main-item-product__button {
@@ -1031,11 +1033,12 @@ h6 {
 
 .rate-main-item__input {
   width: 100%;
-  padding: 1rem 4rem 1rem 1.5rem;
+  padding: 0.75rem 4rem 0.75rem 1.5rem;
   border-radius: 0.75rem;
   border: 0.0625rem solid #e8e5e8;
   -webkit-transition: border 0.15s ease 0s;
   transition: border 0.15s ease 0s;
+  min-height: 3.25rem;
 }
 
 .grid .rate-main-item__input {
@@ -1123,6 +1126,7 @@ h6 {
   font-family: "Gilroy";
   font-size: 1.125rem;
   font-weight: 500;
+  min-height: 3.25rem;
 }
 
 .grid .rate-main-item__button {
